@@ -7,11 +7,8 @@ Homepage
 @endsection --}}
 
 @section('main-content')
-<h1>
-    Homepage
-</h1>
+@foreach ($movies as $movie)
+    <p>{{ $movie->title }}</p>
+@endforeach
 
-<div class="gatto"></div>
-
-<img src="{{ Vite::asset('resources/img/gatto.jpg') }}" class="img-fluid" alt="">
 @endsection
